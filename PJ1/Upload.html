@@ -1,0 +1,169 @@
+<!DOCtype>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Shortcut Icon" href="images/XQX.ico" type="image/x-icon" />
+    <title>上传图片</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Upload.css">
+    <script type="text/javascript" src="GoToTop.js"></script>
+</head>
+<body background="images/background.jpg">
+<header>
+    <div class="menuDiv">
+        <ul>
+            <li><a href="HomePage.html" >Home</a> </li>
+            <li><a href="Search.html">Search</a> </li>
+            <li><a href="Browse.html">Browse</a> </li>
+            <li>
+                <a href=""><img src="images/XQX.ico" class="ico" >Me</a>
+                <ul>
+                    <li><a href="Photos.html"><img src="images/XQX.ico" class="ico" >My Photos</a> </li>
+                    <li><a href="Collection.html"><img src="images/XQX.ico" class="ico" >My Collections</a> </li>
+                    <li><a href="Upload.html"><img src="images/XQX.ico" class="ico" >Upload</a> </li>
+                    <li><a href="Index.html"><img src="images/XQX.ico" class="ico" >Log In</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="description">
+    <p>图片标题</p>
+    <input type="text"><br>
+    <p>图片描述</p>
+    <input type="text"><br>
+    <p>拍摄国家</p>
+    <input type="text"><br>
+    <p>拍摄时间</p>
+    <input type="text"><br>
+    <a href="Photos.html"><input type="submit" value="sunmit"></a><br>
+</div>
+<div class="transbox">
+    <!-- 要将父布局的position设置为relative，父布局将无法包裹input -->
+    <div style="position: relative;">
+        <!--设置input的position为absolute，使其不按文档流排版，并设置其包裹整个布局 -->
+        <!-- 设置opactity为0，使input变透明 -->
+        <!-- 只接受jpg，gif和png格式 -->
+        <input id="upload-input" style="position: absolute; top: 0px; bottom: 0; left: 0;right: 0; opacity: 0;" type="file" accept="image/gif, image/jpg, image/png" onchange="showImg(this)" multiple />
+        <!-- 自定义按钮效果 -->
+        <div style="margin-top:10px;margin-left:0px;">
+            <span style="font-size: 20px;">点击按钮上传文件：</span>
+            <img id="upload" src="images/Upload.jpg" style="width: 40px; height: 40px; vertical-align: middle;" />
+        </div>
+    </div>
+    <div id="imgContainer" style="margin-top: 100px;margin-left:10px;"></div>
+
+</div>
+
+
+<script type="text/javascript">
+    function showImg(obj) {
+        var files = obj.files
+        // document.getElementById("imgContainer").innerHTML = getImgsByUrl(files)
+        getImgsByFileReader(document.getElementById("imgContainer"), files)
+    }
+    // 使用FileReader读取file实例并显示图片
+    function getImgsByFileReader(el, files) {
+        for (var i = 0; i < files.length; i++) {
+            let img = document.createElement('img')
+            img.setAttribute('style', 'width: 400px; height: 400px; vertical-align: middle; margin-right: 100px;')
+            el.appendChild(img)
+            var reader = new FileReader()
+            reader.onload = function(e) {
+                img.src = e.target.result
+            }
+            reader.readAsDataURL(files[i])
+        }
+    }
+</script>
+
+
+<footer class="footer2">
+    <h3>19302010080@fudan.edu.cn</h3>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

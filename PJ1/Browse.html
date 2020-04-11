@@ -1,0 +1,106 @@
+<!DOCtype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="Shortcut Icon" href="images/XQX.ico" type="image/x-icon" />
+    <title>浏览</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Browse.css">
+    <script type="text/javascript" src="GoToTop.js"></script>
+</head>
+<body background="images/background.jpg">
+<header>
+    <div class="menuDiv">
+        <ul>
+            <li><a href="HomePage.html" >Home</a> </li>
+            <li><a href="Search.html" >Search</a> </li>
+            <li><a href="Browse.html" style="background:#DDDDDD;color:#444444;">Browse</a> </li>
+            <li>
+                <a href=""><img src="images/XQX.ico" class="ico" >Me</a>
+                <ul>
+                    <li><a href="Photos.html"><img src="images/XQX.ico" class="ico" >My Photos</a> </li>
+                    <li><a href="Collection.html"><img src="images/XQX.ico" class="ico" >My Collections</a> </li>
+                    <li><a href="Upload.html"><img src="images/XQX.ico" class="ico" >Upload</a> </li>
+                    <li><a href="Index.html"><img src="images/XQX.ico" class="ico" >Log In</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<div class="transbox">
+    <div class="search">
+        <input type="text" placeholder="Search By Title"><br>
+        <input type="button" value="点击搜索" onclick="alert('已显示搜索结果')" style="width:250px;height:40px;margin-top:50px;margin-left:25px;" >
+    </div>
+
+    <aside>
+        <div class="aside2">
+            <p >Hot City</p>
+            <ul>
+                <li><a href="BrowseResult.html">CHINA</a> </li><br>
+                <li><a href="BrowseResult.html">AMERICA</a> </li><br>
+                <li><a href="BrowseResult.html">ITALY</a> </li><br>
+                <li><a href="SearchResult.html">JAPAN</a> </li><br>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="aside2">
+        <p>Hot City</p>
+        <ul>
+            <li><a href="BrowseResult.html">Shang Hai</a> </li><br>
+            <li><a href="BrowseResult.html">Tokyo</a> </li><br>
+            <li><a href="BrowseResult.html">Roma</a> </li><br>
+            <li><a href="BrowseResult.html">New York</a> </li><br>
+        </ul>
+    </div>
+    </aside>
+</div>
+
+
+<div class="background">
+    <form name="select">
+        <select class="selection" name="country" onChange="GetCity()" >
+            <option value="0">请选择所在的国家</option>
+            <option value="1">China</option>
+            <option value="2">Japan</option>
+            <option value="3">Italy</option>
+            <option value="4">America</option>
+        </select>
+        <select class="selection" name="city">
+            <option value="0">请选择所在的城市 </option>
+        </select>
+        <a href="BrowseResult.html"><input class="button" type="button" value="Search"></a>
+    </form>
+</div>
+
+
+
+<footer class="footer2">
+    <h3>19302010080@fudan.edu.cn</h3>
+</footer>
+</body>
+
+
+
+<script type="text/javascript">
+		var city=[
+			['Shanghai','Kunming','Beijing','Yantai'],
+			['Tokyo', 'Osaka', 'Kamakura'],
+			['Roma','Milan','Venice','Florence'],
+			['New York','San Francisco', 'Washington']
+		];
+		function GetCity(){
+			var Country=document.select.country;
+			var City=document.select.city;
+			var country=city[Country.selectedIndex-1];
+			City.length=1;
+			for(var i=0;i<country.length;i++){
+				City[i+1]=new Option(country[i],country[i]);
+			}
+		}
+	</script>
+
+</html>
