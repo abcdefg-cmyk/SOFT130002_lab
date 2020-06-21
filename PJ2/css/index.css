@@ -1,0 +1,158 @@
+body{
+   background-repeat:y-repeat;
+   background-size: 100% 100%;
+   /*background-image:url(/travel-images/background.jpg);*/
+   
+
+
+  /* background:travel-images/background.jpg no-repeat 50px 50px;*/
+      }
+
+
+.LogInBox{
+   width: 40%;
+   height: 70%;
+   margin-top:5%;
+   margin-left:5%;
+   padding:0;
+   background-color:#ffffff;
+   border: 1px solid black;
+   filter:alpha(opacity=80);
+   opacity:0.8;
+   
+   display:inline-block;
+   border-radius:20px;
+
+   /*--display: flex;
+   justify-content: flex-start;--*/
+   }
+
+
+.LogInBox h2{
+   text-align:center;
+   font-size:2em;
+   filter:alpha(opacity=60);
+   opacity:0.6;
+   }
+.LogInBox p{
+   text-align:center;
+   font-size:1.1em;
+   margin-top:5%;
+   }
+
+
+/*.LogTips{
+   width: 60%;
+   height: 50%;
+   margin-top:10%;
+   margin-left:10%;
+   padding:0;
+   background-color: black;
+   border: 1px solid black;
+   filter:alpha(opacity=60);
+}
+.LogTips h3{
+   font-size:1.5em;
+   padding:5% 10% 10% 10%;}*/
+   /*--登录提示信息--*/
+
+
+.LogInfo{
+   width: 40%;
+   height: 50%;
+   margin-top:10%;
+   margin-left:30%;
+   padding:0;
+   background-color: black;
+   border: 1px solid black;
+   filter:alpha(opacity=60);
+}
+.username,.password{
+   text-align:left;
+   font-size:1.5em;
+   width:80%;
+   height:10%;
+   margin-top:5%;
+   margin-left:10%;
+   outline: none !important;
+   border-style:none;
+   border:0;
+   border-bottom:3 solid black;
+}/*设置输入登录讯息*/
+
+
+.submitButton {
+   text-align:center;
+   font-size:2em;
+   width:80%;
+   height:10%;
+   margin-left:10%;
+   margin-top:7%;
+   background-color:#886600 ;
+   outline: none;
+   -webkit-appearance: none;
+   border-radius:15px;
+   color:#FFFFFF;}
+.LogInBox input[type="submit"]:hover{
+   border-radius:15px;
+   border:5px solid #886600 ;
+   background-color:#FFFFFF ;
+   color:black;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;/*缓慢结束*/
+   }
+
+
+
+.putInPassword,.examPassword{
+   width:30%;
+   height:10%;
+   padding:1.5;
+   border:100px;
+   float:left;
+   margin-top:35px;
+   border:1px solid black;
+   border-radius:15px;
+  }
+
+a{
+   text-decoration:none;
+   font-size:1em;
+   color:#000000;}
+
+
+.LogButton{
+   background:pink;
+   width:70%;
+   margin-left:15%;
+   margin-top:10%;
+   }/*设置登录按钮*/
+
+
+.title{
+   /*border:1px solid;*/
+   width:30%;
+   height:70%;
+   /*margin-left:55%;*/
+   
+   display:inline-block;
+   text-align:left;
+   margin-top:5%;
+   margin-left:5%;
+      color:#FFFFFF;
+   }
+.title p{
+   font-size:3em;
+   margin-left:10%;
+   margin-top:10%;
+   color:#FFFFFF;}
+.title p:hover{
+   font-size:3.2em;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;/*缓慢结束*/
+    }
+

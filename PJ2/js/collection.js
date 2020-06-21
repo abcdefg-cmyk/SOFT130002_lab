@@ -1,0 +1,1 @@
+var collectButtons=document.getElementsByClassName("collect");
